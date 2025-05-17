@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>src/carpmsicon.png</file>
+        <file>src/createacc.png</file>
+        <file>src/login.png</file>
+        <file>src/PMS.png</file>
+        <file>src/PMSicon.png</file>
+    </qresource>
+</RCC>
