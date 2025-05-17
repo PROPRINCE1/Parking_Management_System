@@ -2,6 +2,20 @@
 
 **A secure desktop application** built with C++17 and Qt framework featuring dynamic lot management, JSON data storage, and encrypted user credentials.
 
+## 🎨 UI Gallery
+
+| Component | Screenshot |
+|-----------|------------|
+| **Login Page** | <img src="/images/Login.png" width="500"> |
+| **Registration Page** | <img src="/images/Register Account.png" width="500"> |
+| **Vehicle Entry** | <img src="/images/VEntry.png" width="500"> |
+| **Vehicle Exit** | <img src="/images/VExit.png" width="500"> |
+| **Vehicle Log** | <img src="/images/VLog.png" width="500"> |
+| **Admin Settings** | <img src="/images/SettingsAdmin.png" width="500"> |
+| **Employee Settings** | <img src="/images/SettingsEmployee.png" width="500"> |
+| **User Log** | <img src="/images/UserLog.png" width="500"> |
+
+
 ---
 
 ## 🌟 Key Features
