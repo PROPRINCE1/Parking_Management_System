@@ -2,70 +2,62 @@
 
 **A secure desktop application** built with C++17 and Qt framework featuring dynamic lot management, JSON data storage, and encrypted user credentials.
 
+![C++](https://img.shields.io/badge/C++-17-blue) ![Qt](https://img.shields.io/badge/Qt-4.8.1-green) ![JSON](https://img.shields.io/badge/Storage-JSON-ff69b4) ![OOP](https://img.shields.io/badge/Design-OOP-brightgreen)
+
+---
+
 ## 🎨 UI Gallery
-
-| Component | Screenshot |
-|-----------|------------|
-| **Login Page** | <img src="/images/Login.png" width="500"> |
-| **Registration Page** | <img src="/images/Register Account.png" width="500"> |
-| **Vehicle Entry** | <img src="/images/VEntry.png" width="500"> |
-| **Vehicle Exit** | <img src="/images/VExit.png" width="500"> |
-| **Vehicle Log** | <img src="/images/VLog.png" width="500"> |
-| **Admin Settings** | <img src="/images/SettingsAdmin.png" width="500"> |
-| **Employee Settings** | <img src="/images/SettingsEmployee.png" width="500"> |
-| **User Log** | <img src="/images/UserLog.png" width="500"> |
-
+| Feature | Screenshot |
+|---------|------------|
+| **Login Page** | <img src="/images/Login.png" width="400"> |
+| **Registration** | <img src="/images/Register Account.png" width="400"> |
+| **Vehicle Entry** | <img src="/images/VEntry.png" width="400"> |
+| **Vehicle Exit** | <img src="/images/VExit.png" width="400"> |
+| **Admin Settings** | <img src="/images/SettingsAdmin.png" width="400"> |
+| **Employee Settings** | <img src="/images/SettingsEmployee.png" width="400"> |
 
 ---
 
 ## 🌟 Key Features
-
 ### 🛠️ Core Functionality
-- **Real-time Parking Lot Resizing**
-  - Admins can dynamically expand/reduce available slots
-  - UI automatically updates to reflect changes
+- **Dynamic Parking Management**
+  - Real-time slot adjustment
+  - Automatic fee calculation
+- **Role-Based Access**
+  - Admin: Full system control
+  - Employee: Limited permissions
+- **Vehicle Tracking**
+  - Timestamped entry/exit logs
+  - Parking slip generation
 
-- **Role-Based Access Control**
-  - **Admin Portal**: Password-protected dashboard (add/remove slots, view employees)
-  - **User Interface**: Vehicle parking/exit with automatic fee calculation
+### 🔐 Secure Data Handling
+```json
+// accounts.json example
+{
+  "employeeId": "ENCRYPTED",
+  "password": "ENCRYPTED",
+  "role": "ENCRYPTED"
+}
 
-- **Vehicle Lifecycle Tracking**
-  - Entry/exit timestamp logging
-  - Duration-based payment processing
-  - Parking Slip generation
+🚀 Getting Started
+Prerequisites
+  -Qt 4.8.1
+  -C++17 compiler
+  -qmake
 
-### 🔐 Data Management
-- **JSON Database System**
-  - `slots.json`: Tracks slot availability and configurations
-  - `accounts.json`: Stores encrypted admin/user credentials
-  - `logdata.json`: Records vehicle activity history
 
-- **Security Layer**
-  - Encoding and Decoding through functions in C++
-  - Protected file read/write operations
+🤝 Contribution
+Fork the repository
+Create your feature branch (git checkout -b feature/improvement)
+Commit changes (git commit -m 'Add new payment module')
+Push to branch (git push origin feature/improvement)
+Open a Pull Request
 
-### 🖥️ Qt Components
-- **Responsive UI** with real-time slot visualization
-- **Model-View Architecture** for clean data presentation
-- **Signal-Slot System** for event handling
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Qt 4.8.1 Follow this tutorial -> https://www.youtube.com/watch?v=yyIUgBvBpqE&ab_channel=HabitTechHorizons
-- C++17 compatible compiler
-- qmake
-
-### Installation
-```bash
 git clone https://github.com/PROPRINCE1/Parking_Management_System.git
 cd Parking_Management_System
-# Qt Creator:
-# 1. Open ParkingSystem.pro
-# 2. Select kit (Desktop Qt + compiler)
-# 3. Build & Run (Ctrl+R)
+qmake ParkingSystem.pro
+make
+./Parking_Management_System
 
 
 Parking_Management_System/
@@ -80,32 +72,7 @@ Parking_Management_System/
 │   │   ├── mainwindow.ui      # base UI file
 │   │   └── signin.ui          # Sign in window file
 ├── data/                      # JSON storage
-│   ├── slots.json             # {
-│   │                              {
-│   │                               "Bike": 30,
-│   │                               "Car": 26,
-│   │                               "Electric Bike": 20,
-│   │                               "Electric Car": 20,
-│   │                               "Truck": 10
-│   │                              }
-│   │                            }
-│   ├── accounts.json             # {
-│   │                                 [
-│   │                                   {
-│   │                                     "employeeId": "369<?8",
-│   │                                     "password": "viy|;47:=",
-│   │                                     "role": "gqvty{ik",
-│   │                                     "username": "viy|Kegu}xv"
-│   │                                   }
-│   │                                 ]
-│   │                               }
+│   ├── slots.json             # 
+│   ├── accounts.json          # 
 │   └── logdata.json          # Activity Records
 └── ParkingSystem.pro         # Qt project file
-
-
-🤝 Contribution
-Fork the repository
-Create your feature branch (git checkout -b feature/improvement)
-Commit changes (git commit -m 'Add new payment module')
-Push to branch (git push origin feature/improvement)
-Open a Pull Request
